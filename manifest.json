@@ -1,20 +1,22 @@
 {
-    "name": "Dom\u00e9 Soul",
-    "short_name": "Dom\u00e9Soul",
-    "start_url": "/domesoul-app/index.html",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#000000",
-    "icons": [
-        {
-            "src": "assets/images/icon-192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "assets/images/icon-512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ]
+  "name": "Dom\u00e9 Soul \u2013 Music, Mission & Marketplace",
+  "short_name": "Dom\u00e9 Soul",
+  "start_url": "https://domesoul.github.io/domesoul-app/",
+  "display": "standalone",
+  "background_color": "#f9f1ea",
+  "theme_color": "#a97449",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
