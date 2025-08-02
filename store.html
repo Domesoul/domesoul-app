@@ -1,8 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head><title>Store</title></head>
+<head>
+    <title>Domé Soul Store</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .store-header { text-align: center; margin-bottom: 20px; }
+        .product-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .product-card h3 {
+            font-size: 16px;
+            margin: 10px 0 5px;
+        }
+        .product-card p {
+            color: #333;
+            margin: 5px 0;
+        }
+        .product-card button {
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .product-card button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
 <body>
-<h1>Domé Soul Store</h1>
-<p>Products: merch, electronics, electrical items.</p>
+    <div class="store-header">
+        <h1>Domé Soul Store</h1>
+        <p>Shop to Support – Every Purchase Powers a Mission</p>
+    </div>
+
+    <h2>Solar System Equipment</h2>
+    <div class="product-grid">
+        <div class="product-card"><img src="assets/products/solar-panel.jpg" alt="Solar Panel"><h3>200W Solar Panel</h3><p>₦60,000</p><button>Buy Now</button></div>
+        <div class="product-card"><img src="assets/products/inverter.jpg" alt="Inverter"><h3>1.5kVA Inverter</h3><p>₦85,000</p><button>Buy Now</button></div>
+        <div class="product-card"><img src="assets/products/battery.jpg" alt="Battery"><h3>12V 200Ah Battery</h3><p>₦120,000</p><button>Buy Now</button></div>
+        <div class="product-card"><img src="assets/products/charge-controller.jpg" alt="Charge Controller"><h3>40A Charge Controller</h3><p>₦25,000</p><button>Buy Now</button></div>
+        <div class="product-card"><img src="assets/products/cables.jpg" alt="Solar Cables"><h3>Solar Cables (10m)</h3><p>₦8,000</p><button>Buy Now</button></div>
+        <div class="product-card"><img src="assets/products/mc4.jpg" alt="MC4 Connectors"><h3>MC4 Connectors (Pair)</h3><p>₦2,500</p><button>Buy Now</button></div>
+    </div>
+
+    <h2>Merch & Accessories</h2>
+    <div class="product-grid">
+        <div class="product-card"><img src="assets/products/tshirt.jpg" alt="Domé Soul T-Shirt"><h3>Domé Soul T-Shirt</h3><p>₦7,000</p><button>Buy Now</button></div>
+        <div class="product-card"><img src="assets/products/poster.jpg" alt="Poster"><h3>Inspiration Poster</h3><p>₦3,000</p><button>Buy Now</button></div>
+        <div class="product-card"><img src="assets/products/hoodie.jpg" alt="Hoodie"><h3>Domé Soul Hoodie</h3><p>₦12,000</p><button>Buy Now</button></div>
+        <div class="product-card"><img src="assets/products/notebook.jpg" alt="Notebook"><h3>Branded Notebook</h3><p>₦2,000</p><button>Buy Now</button></div>
+    </div>
+
+    <h2>Electronics & Electrical</h2>
+    <div class="product-grid">
+        <div class="product-card"><img src="assets/products/earphones.jpg" alt="Earphones"><h3>Wireless Earphones</h3><p>₦6,500</p><button>Buy Now</button></div>
+        <div class="product-card"><img src="assets/products/extension-cord.jpg" alt="Extension Cord"><h3>4-Way Extension Cord</h3><p>₦4,000</p><button>Buy Now</button></div>
+        <div class="product-card"><img src="assets/products/powerbank.jpg" alt="Power Bank"><h3>10,000mAh Power Bank</h3><p>₦9,500</p><button>Buy Now</button></div>
+        <div class="product-card"><img src="assets/products/usb-cable.jpg" alt="USB Cable"><h3>Fast Charging USB Cable</h3><p>₦1,200</p><button>Buy Now</button></div>
+        <div class="product-card"><img src="assets/products/surge.jpg" alt="Surge Protector"><h3>Surge Protector</h3><p>₦3,500</p><button>Buy Now</button></div>
+    </div>
+
+    <a href="index.html">← Back to Home</a>
 </body>
 </html>
