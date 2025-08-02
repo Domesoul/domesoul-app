@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html>
-<head><title>Domé Soul – Music, Mission & Marketplace</title></head>
-  <link rel="manifest" href="manifest.json">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domé Soul – Music, Mission & Marketplace</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
 <body>
-<h1>Welcome to Domé Soul</h1>
-<nav>
-<a href='music.html'>Music</a> |
-<a href='soul-mission.html'>Soul Mission</a> |
-<a href='store.html'>Store</a> |
-<a href='talent.html'>Talent</a> |
-<a href='learn.html'>Learn</a> |
-<a href='contact.html'>Contact</a>
-</nav>
-  <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
-    .then(function(registration) {
-      console.log('Service Worker registered with scope:', registration.scope);
-    }, function(err) {
-      console.log('Service Worker registration failed:', err);
-    });
-  }
-</script>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="soul-mission.html">Soul Mission</a>
+        <a href="store.html">Store</a>
+        <a href="learn.html">Learn</a>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to Domé Soul</h1>
+        <p>Music. Mission. Marketplace. Empowering lives with rhythm, heart, and purpose.</p>
+
+        <h2>Explore</h2>
+        <ul>
+            <li><a href="music.html">🎶 Stream Music</a></li>
+            <li><a href="soul-mission.html">❤️ Support Soul Mission</a></li>
+            <li><a href="store.html">🛒 Visit Store</a></li>
+            <li><a href="learn.html">🎓 TeenTech Basics</a></li>
+        </ul>
+    </div>
 </body>
 </html>
