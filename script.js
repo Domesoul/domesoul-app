@@ -1,1 +1,0 @@
-console.log('Domé Soul App Loaded');
