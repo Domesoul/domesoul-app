@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><title>Domé Soul – Music, Mission & Marketplace</title></head>
+  <link rel="manifest" href="manifest.json">
 <body>
 <h1>Welcome to Domé Soul</h1>
 <nav>
@@ -11,5 +12,15 @@
 <a href='learn.html'>Learn</a> |
 <a href='contact.html'>Contact</a>
 </nav>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+    .then(function(registration) {
+      console.log('Service Worker registered with scope:', registration.scope);
+    }, function(err) {
+      console.log('Service Worker registration failed:', err);
+    });
+  }
+</script>
 </body>
 </html>
