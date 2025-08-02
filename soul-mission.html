@@ -1,8 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head><title>Soul Mission</title></head>
+<head>
+    <title>Soul Mission</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        .donation { margin-top: 40px; background: #f0f0f0; padding: 20px; border-radius: 10px; }
+        button {
+            background-color: #04AA6D;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #038f5a;
+        }
+    </style>
+</head>
 <body>
-<h1>Soul Mission</h1>
-<p>Support or nominate someone in need.</p>
+
+    <h1>Soul Mission</h1>
+    <p>Join us in reaching the poor and touching lives through music and humanitarian outreach.</p>
+
+    <div class="donation">
+        <h2>Support Our Mission</h2>
+        <p>Your donation helps us provide education, solar kits, food relief, and music that heals.</p>
+        <button onclick="payWithPaystack()">Donate ₦1,000</button>
+    </div>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script>
+    function payWithPaystack() {
+      var handler = PaystackPop.setup({
+        key: 'pk_test_0123456789abcdef0123456789abcdef01234567', // Test public key
+        email: 'donor@example.com',
+        amount: 100000, // 1000 NGN in Kobo
+        currency: 'NGN',
+        callback: function(response){
+            alert('Thank you for donating! Ref: ' + response.reference);
+        },
+        onClose: function(){
+            alert('Transaction was cancelled');
+        }
+      });
+      handler.openIframe();
+    }
+    </script>
+
+    <a href="index.html">← Back to Home</a>
 </body>
 </html>
