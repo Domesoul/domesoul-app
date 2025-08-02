@@ -1,56 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Soul Mission</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial; margin: 20px; }
-        .donation { margin-top: 40px; background: #f0f0f0; padding: 20px; border-radius: 10px; }
-        button {
-            background-color: #04AA6D;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #038f5a;
-        }
-    </style>
+    <title>Soul Mission – Domé Soul</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="soul-mission.html">Soul Mission</a>
+        <a href="store.html">Store</a>
+        <a href="learn.html">Learn</a>
+    </nav>
 
-    <h1>Soul Mission</h1>
-    <p>Join us in reaching the poor and touching lives through music and humanitarian outreach.</p>
+    <div class="container">
+        <h1>Soul Mission</h1>
+        <p>Join us in reaching the poor and touching lives through music and humanitarian outreach.</p>
 
-    <div class="donation">
-        <h2>Support Our Mission</h2>
-        <p>Your donation helps us provide education, solar kits, food relief, and music that heals.</p>
-        <button onclick="payWithPaystack()">Donate ₦1,000</button>
+        <div class="donation">
+            <h2>Support Our Mission</h2>
+            <p>Your donation helps us provide education, solar kits, food relief, and music that heals.</p>
+            <button onclick="donate(1000)">Donate ₦1,000</button>
+            <button onclick="donate(5000)">Donate ₦5,000</button>
+            <button onclick="donate(10000)">Donate ₦10,000</button>
+        </div>
     </div>
 
     <script src="https://js.paystack.co/v1/inline.js"></script>
     <script>
-    function payWithPaystack() {
-      var handler = PaystackPop.setup({
-        key: 'pk_test_0123456789abcdef0123456789abcdef01234567', // Test public key
-        email: 'donor@example.com',
-        amount: 100000, // 1000 NGN in Kobo
-        currency: 'NGN',
-        callback: function(response){
-            alert('Thank you for donating! Ref: ' + response.reference);
-        },
-        onClose: function(){
-            alert('Transaction was cancelled');
+        function donate(amount) {
+            var handler = PaystackPop.setup({
+                key: 'pk_test_0123456789abcdef0123456789abcdef01234567', // Replace with live key when ready
+                email: 'donor@example.com',
+                amount: amount * 100,
+                currency: 'NGN',
+                callback: function(response) {
+                    alert('Thanks for donating! Ref: ' + response.reference);
+                },
+                onClose: function() {
+                    alert('Transaction was cancelled');
+                }
+            });
+            handler.openIframe();
         }
-      });
-      handler.openIframe();
-    }
     </script>
-
-    <a href="index.html">← Back to Home</a>
 </body>
 </html>
