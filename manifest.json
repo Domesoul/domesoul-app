@@ -1,0 +1,33 @@
+{
+  "name": "Domé Soul",
+  "short_name": "DoméSoul",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fdf8f5",
+  "theme_color": "#3d2c29",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "sizes": "540x960",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshot2.png",
+      "sizes": "540x960",
+      "type": "image/png"
+    }
+  ]
+}
