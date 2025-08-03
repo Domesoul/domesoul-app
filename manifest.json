@@ -7,6 +7,20 @@
   "theme_color": "#3d2c29",
   "orientation": "portrait",
   "icons": [
+   {
+  "id": "/",
+  "name": "Domé Soul – Music, Mission & Marketplace",
+  "short_name": "DoméSoul",
+  "description": "A soulful platform merging music, mission, and marketplace.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "background_color": "#ffffff",
+  "theme_color": "#000000"
+}
+
     {
       "src": "icon-192.png",
       "sizes": "192x192",
