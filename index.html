@@ -11,5 +11,13 @@
   <h1>Welcome to Domé Soul – Music, Mission & Marketplace</h1>
   <p>Now installable as a Progressive Web App!</p>
   <script src="script.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('SW registered', reg))
+      .catch(err => console.error('SW registration failed:', err));
+  }
+</script>
+
 </body>
 </html>
