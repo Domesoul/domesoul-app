@@ -6,6 +6,11 @@
     <title>Domé Soul – Music, Mission & Marketplace</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="manifest" href="manifest.json" />
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/domesoul-app/sw.js');
+  }
+</script>
 </head>
 <body>
     <nav>
